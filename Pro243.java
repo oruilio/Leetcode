@@ -24,21 +24,19 @@ class Solution {
                 int dis=1;
                 for(int j=i+1; j<words.length; j++){
                   if(words[j].equals(word1)||words[j].equals(word2)){
-                      if(words[j].equals(tmp)){
-                          dis=1;
-                      }
-                      else{
-                        if(dis<res){
+                      if(!words[j].equals(tmp)&&dis<res){
                            res=dis;
-                        }
                       }
+                      dis=1;
+                      tmp=words[j];
                   }
                   else{
                       dis++;
                   }
-                }      
+                }
+                return res;
             }
         }
-        return res;
+        return -1;
     }
 }
