@@ -68,5 +68,12 @@ class Solution {
             }
         }
         return sb.toString();
+     
+        //sol3:   
+        List<String> list = new ArrayList<>(); 
+        for(String str : s.split(" ")){
+            if(str.length() > 0) list.add(0, str);
+        }
+        return String.join(" ", list); 
     }
 }
