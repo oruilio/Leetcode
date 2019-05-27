@@ -1,5 +1,5 @@
 //Rui Li
-//Pro 383 Easy
+//Pro 344 Easy
 
 /*
  Write a function that reverses a string. The input string is given as an array of characters char[].
